@@ -13,7 +13,10 @@ cask "pixnip" do
   desc "Screenshot tool with region capture, annotation editor and color picker"
   homepage "https://github.com/132262B/pixnip"
 
-  depends_on macos: ">= :sonoma"
+  # 문자열 비교(">= :sonoma")는 Homebrew 에서 deprecated 됐다. 심볼만 쓰면
+  # 그 버전 이상을 뜻한다. ScreenCaptureKit 의 captureImageWithFilter 가
+  # macOS 14 부터라 그 아래로는 내려갈 수 없다.
+  depends_on macos: :sonoma
 
   app "pixnip.app"
 
