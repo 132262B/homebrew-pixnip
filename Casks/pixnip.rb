@@ -4,8 +4,8 @@
 # Casks/pixnip.rb 로 밀어 넣는다. 고칠 일이 있으면 이 파일을 고치고, 만들어진
 # 결과물은 손대지 않는다.
 cask "pixnip" do
-  version "0.1.3"
-  sha256 "5295f31beb10110ebb0bb44ce868193a65ffcba62230b4de67049a8489870e4d"
+  version "0.1.4"
+  sha256 "ac5028c1165c0c1c44a1a098ce9fbead504049c205514a15aec0c87d8d5256e8"
 
   url "https://github.com/132262B/pixnip/releases/download/v#{version}/pixnip-#{version}-macos.zip",
       verified: "github.com/132262B/pixnip/"
