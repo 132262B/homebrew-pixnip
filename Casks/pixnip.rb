@@ -4,8 +4,8 @@
 # Casks/pixnip.rb 로 밀어 넣는다. 고칠 일이 있으면 이 파일을 고치고, 만들어진
 # 결과물은 손대지 않는다.
 cask "pixnip" do
-  version "0.1.1"
-  sha256 "690a89d1e6225568a496bd2519f7d02d23f703abac90cf2e49c9dbbfe7da60dd"
+  version "0.1.2"
+  sha256 "dc3e40be2e97f255353cdf3b9167aa6e4e224139b2d2d4dc1ec4c749badabd33"
 
   url "https://github.com/132262B/pixnip/releases/download/v#{version}/pixnip-#{version}-macos.zip",
       verified: "github.com/132262B/pixnip/"
@@ -28,6 +28,25 @@ cask "pixnip" do
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/pixnip.app"]
   end
 
+  # pixnip 은 메뉴 막대에 계속 떠 있는 앱이다. 이게 없으면 brew 가 번들만 갈아
+  # 끼우고 돌던 프로세스는 그대로 둬서, 업그레이드해도 예전 버전이 계속 돈다.
+  # 사용자 눈에는 "업데이트가 안 되는" 것으로 보인다.
+  #
+  # quit 을 적어 두면 brew 가 업그레이드 전에 앱을 끄고, 끝난 뒤 다시 띄운다
+  # (Homebrew 의 reopen_apps_after_upgrade). 단 이 판단은 **설치돼 있던 쪽**의
+  # cask 를 보고 하므로, 이 스탠자가 없던 버전에서 올라올 때는 한 번은 손으로
+  # 꺼야 한다.
+  #
+  # 스탠자 순서(app → postflight → uninstall → zap → caveats)는 brew style 이
+  # 강제한다. 순서를 바꾸면 style 검사에서 걸린다.
+  uninstall quit: "kr.doweb.pixnip"
+
+  zap trash: [
+    "~/Library/Application Support/kr.doweb.pixnip",
+    "~/Library/Saved Application State/kr.doweb.pixnip.savedState",
+    "~/Library/WebKit/kr.doweb.pixnip",
+  ]
+
   caveats <<~EOS
     pixnip 은 Apple 공증(notarization)을 받지 않았습니다.
 
@@ -38,11 +57,13 @@ cask "pixnip" do
 
     처음 실행하면 화면 기록 권한을 요청합니다. 허용한 뒤 창의 '다시 시작' 을
     누르면 적용됩니다. macOS 는 앱이 새로 실행될 때 이 권한을 반영합니다.
-  EOS
 
-  zap trash: [
-    "~/Library/Application Support/kr.doweb.pixnip",
-    "~/Library/Saved Application State/kr.doweb.pixnip.savedState",
-    "~/Library/WebKit/kr.doweb.pixnip",
-  ]
+    업데이트는 이렇게 합니다.
+
+      brew update && brew upgrade --cask pixnip
+
+    지금 돌고 있는 버전은 설정 창 왼쪽 아래에 적혀 있습니다. 업그레이드했는데
+    그 숫자가 그대로면 예전 프로세스가 아직 떠 있는 것이니, pixnip 을 완전히
+    끄고 다시 실행해 주세요.
+  EOS
 end
