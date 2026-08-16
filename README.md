@@ -1,6 +1,7 @@
 # homebrew-pixnip
 
-[pixnip](https://github.com/132262B/pixnip) 설치용 Homebrew 탭입니다.
+맥용 캡처 도구 pixnip 의 배포 저장소입니다. 설치용 cask 와 릴리스 zip 이
+여기에 올라옵니다.
 
 ```bash
 brew tap 132262b/pixnip
@@ -14,5 +15,5 @@ Homebrew 가 실행을 거부합니다.
 
 pixnip 은 Apple 공증(notarization)을 받지 않아 공식 homebrew-cask 에 올릴 수
 없습니다. 공증 없이는 격리 속성을 떼지 않으면 앱이 아예 열리지 않습니다.
-무엇을 하는 코드인지는 [Casks/pixnip.rb](Casks/pixnip.rb) 에서 그대로 보실 수
-있고, 앱 소스는 위 저장소에 있습니다.
+설치 과정이 무엇을 하는지는 [Casks/pixnip.rb](Casks/pixnip.rb) 에서 그대로
+보실 수 있습니다.

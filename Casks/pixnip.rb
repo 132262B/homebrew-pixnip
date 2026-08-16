@@ -3,15 +3,18 @@
 # scripts/release.sh 가 버전과 체크섬을 채워 탭 저장소(homebrew-pixnip)의
 # Casks/pixnip.rb 로 밀어 넣는다. 고칠 일이 있으면 이 파일을 고치고, 만들어진
 # 결과물은 손대지 않는다.
+#
+# 132262B/homebrew-pixnip 는 릴리스 zip 이 올라가는 공개 탭 저장소다. 소스 저장소는 비공개라
+# 여기서 참조하지 않는다.
 cask "pixnip" do
   version "0.1.4"
   sha256 "ac5028c1165c0c1c44a1a098ce9fbead504049c205514a15aec0c87d8d5256e8"
 
-  url "https://github.com/132262B/pixnip/releases/download/v#{version}/pixnip-#{version}-macos.zip",
-      verified: "github.com/132262B/pixnip/"
+  url "https://github.com/132262B/homebrew-pixnip/releases/download/v#{version}/pixnip-#{version}-macos.zip",
+      verified: "github.com/132262B/homebrew-pixnip/"
   name "pixnip"
   desc "Screenshot tool with region capture, annotation editor and color picker"
-  homepage "https://github.com/132262B/pixnip"
+  homepage "https://github.com/132262B/homebrew-pixnip"
 
   # 문자열 비교(">= :sonoma")는 Homebrew 에서 deprecated 됐다. 심볼만 쓰면
   # 그 버전 이상을 뜻한다. ScreenCaptureKit 의 captureImageWithFilter 가
@@ -51,9 +54,10 @@ cask "pixnip" do
     pixnip 은 Apple 공증(notarization)을 받지 않았습니다.
 
     설치 과정에서 Gatekeeper 격리 속성을 떼어 냈습니다. 즉 macOS 가 이 앱을
-    검사하지 않고 실행합니다. 소스는 아래에서 직접 확인하실 수 있습니다.
+    검사하지 않고 실행합니다. 설치 스크립트가 하는 일은 아래에서 그대로
+    확인하실 수 있습니다.
 
-      https://github.com/132262B/pixnip
+      https://github.com/132262B/homebrew-pixnip/blob/main/Casks/pixnip.rb
 
     처음 실행하면 화면 기록 권한을 요청합니다. 허용한 뒤 창의 '다시 시작' 을
     누르면 적용됩니다. macOS 는 앱이 새로 실행될 때 이 권한을 반영합니다.
