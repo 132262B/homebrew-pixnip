@@ -7,8 +7,8 @@
 # 132262B/homebrew-pixnip 는 릴리스 zip 이 올라가는 공개 탭 저장소다. 소스 저장소는 비공개라
 # 여기서 참조하지 않는다.
 cask "pixnip" do
-  version "0.1.7"
-  sha256 "c1e2bc4417b01dbe894fe48aaef54db22e00009c5e6675be4300a27b606408a1"
+  version "0.1.8"
+  sha256 "707def65483c6f8a0f5279d92fc95b2f9466b46feb77e635e72bf820ad7ed344"
 
   url "https://github.com/132262B/homebrew-pixnip/releases/download/v#{version}/pixnip-#{version}-macos.zip",
       verified: "github.com/132262B/homebrew-pixnip/"
