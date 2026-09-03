@@ -4,7 +4,8 @@
 
 **A screenshot tool for macOS.**
 
-Press a shortcut, the screen freezes, drag — it is already on your clipboard.
+Press a shortcut, the screen freezes, drag — the image, or the text inside it,
+is already on your clipboard.
 
 macOS 14+ · Apple Silicon & Intel · light & dark · 10 languages
 
@@ -35,6 +36,38 @@ tooltip that disappears the moment you look away — what you saw is what gets c
 | **Window**          | Hover and the border snaps to the window; click to take it                       |
 | **Color picker**    | Magnify down to the pixel and copy its `#RRGGBB`                                  |
 | **Text extraction** | Read the text inside a dragged area straight into the clipboard                  |
+
+## Text you can't select
+
+Drag over any text on screen and it arrives on your clipboard as text — a screenshot a
+colleague sent you, an error dialog that won't let you copy, a scanned PDF, a paused frame
+of a video.
+
+<img src="images/ocr.png" alt="Dragging over a block of text in the pixnip settings window to extract it" width="700">
+
+That drag put exactly this on the clipboard:
+
+```
+Area capture
+Drag to crop exactly what you want.
+Full screen capture
+Captures the entire display under the cursor.
+Window capture
+Hover to snap to a window, click to capture it.
+Color picker
+Picks a pixel color and copies its #RRGGBB code.
+Text extraction
+Reads the text in a dragged area into the clipboard.
+```
+
+Line breaks are kept in reading order. It runs on the same recognizer macOS uses for Live
+Text, so there is no model to download and nothing leaves your Mac. Korean and English are
+recognized out of the box, and other languages are detected automatically.
+
+## Pick a color from anywhere
+
+Magnify down to the pixel and the `#RRGGBB` lands on your clipboard. The magnifier follows
+the cursor across every display.
 
 <img src="images/picker.png" alt="The color picker magnifier showing a pixel grid and the hex code 0B84FF" width="350">
 
