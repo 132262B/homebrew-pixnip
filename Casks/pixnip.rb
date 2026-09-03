@@ -8,7 +8,7 @@
 # 여기서 참조하지 않는다.
 cask "pixnip" do
   version "0.1.11"
-  sha256 "3f5451aea32af518ca592f63d988f09e5c2abc35bfdc6eff71431a49b5f5bce6"
+  sha256 "48bdd670faacca75f64e35a1b36d2534d174aeea3bd14a3f7e7f03d9b724db2e"
 
   url "https://github.com/132262B/homebrew-pixnip/releases/download/v#{version}/pixnip-#{version}-macos.zip",
       verified: "github.com/132262B/homebrew-pixnip/"
