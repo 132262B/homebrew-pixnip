@@ -26,8 +26,10 @@ Homebrew asks for on third-party taps.
 
 ## Catch the moment
 
-The screen freezes the instant you press the shortcut. A video mid-frame, an open menu, a
-tooltip that disappears the moment you look away — what you saw is what gets cut.
+Press the shortcut and you select right on the live screen. Turn on **Freeze screen** in
+Settings → Capture and the picture holds still from the instant you pressed — a video
+mid-frame, an open menu, a tooltip that disappears the moment you look away, all of it
+stays exactly as you saw it.
 
 |                     |                                                                                  |
 | ------------------- | -------------------------------------------------------------------------------- |
@@ -105,8 +107,9 @@ clear of the built-in macOS screenshot keys (`⌘⇧3/4/5`).
 <img src="images/settings.png" alt="The General tab in pixnip settings" width="700">
 
 Save as PNG, JPEG or WebP with a quality slider, pick where files land, decide whether the
-preview appears and how long it stays, open at login, and update from inside the app.
-Right-click any image in Finder → **Open With → pixnip** to edit it on the spot.
+preview appears and how long it stays, freeze the screen while you select, open at login,
+and update from inside the app. Right-click any image in Finder → **Open With → pixnip**
+to edit it on the spot.
 
 | Action           | Default |
 | ---------------- | ------- |
