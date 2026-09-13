@@ -85,8 +85,9 @@ Every capture lands on the clipboard first, so you can paste it immediately. Cli
 preview in the bottom-right corner and it opens straight into the editor.
 
 Pen, highlighter, shapes, arrows, text, mosaic, blur and crop — each one key away.
-`⌘S` saves to your folder, `⌘C` copies. The ✨ button wraps the shot in a gradient
-background with rounded corners and a shadow, ready to share.
+`⌘S` saves to your folder, `⌘C` copies. The background button opens a side panel that
+sets the shot on a wallpaper, gradient, solid color or your own image — with padding,
+rounded corners, shadow and aspect ratios like 16:9 or 1:1, ready to share.
 
 | Tool      | Key | Tool      | Key |
 | --------- | --- | --------- | --- |
