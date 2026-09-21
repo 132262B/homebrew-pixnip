@@ -39,8 +39,8 @@ stays exactly as you saw it.
 | **Area**            | Drag exactly what you want. `Space` moves the selection, arrow keys nudge it 1 px |
 | **Full screen**     | The whole display under the cursor                                               |
 | **Window**          | Hover and the border snaps to the window; click to take it                       |
-| **Pinned area**     | Pin a frame on screen and take the same spot on every press, app still usable    |
-| **Screen recording** | Same frame, or a single window; system sound and mic optional — the editor opens  |
+| **Pinned area**     | Leave a frame on screen and take the same spot on every press; outside dims, app still usable |
+| **Screen recording** | The red button on the same frame. One window if you like; sound and mic optional — the editor opens |
 | **Color picker**    | Magnify down to the pixel and copy its `#RRGGBB`                                  |
 | **Text extraction** | Read the text inside a dragged area straight into the clipboard                  |
 
@@ -52,13 +52,20 @@ of a video.
 
 <img src="images/ocr.png" alt="Dragging over a block of text in the pixnip settings window to extract it" width="700">
 
-## Record the screen
+## Leave a frame, capture it, record it
 
-Press `⌘⇧⌥V` and the same frame you use for pinned captures appears. Drag it where you
-want, resize it, or use the buttons on its bar — the display button fills the whole screen,
-the window button lets you click one window to record just that. Press `⌘⇧⌥V` again (or
-the record button) to start: the border turns red and the bar shows the time. Press once
-more to stop. Whatever is under the frame keeps working while you record.
+Press `⌘⇧⌥R` and a frame appears. Like the system screenshot tool, everything outside it
+dims and only the frame stays bright. Grab the band around it or the bar to move it, drag a
+corner to resize, and every press of the blue button (or `↩`) captures that spot. The
+inside of the frame is empty, so the app underneath keeps working — handy when the same
+spot keeps changing and you want it again and again.
+
+<img src="images/pinned.png" alt="The pixnip pinned frame: a bright area in the middle of a dimmed screen, with the shutter and record bar below" width="700">
+
+The red button on the same frame (or `R`, or `⌘⇧⌥V`) records. The display button on the
+bar fills the whole screen, the window button lets you click one window to record just
+that. When recording starts the dimming lifts, the border turns red and the bar shows the
+time. Press once more to stop. Whatever is under the frame keeps working while you record.
 
 Sound goes in with the picture when you want it. Settings → Recording has switches for
 system sound (whatever plays through the speakers) and the microphone (macOS 15 and
