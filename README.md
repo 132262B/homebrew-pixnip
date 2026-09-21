@@ -37,6 +37,7 @@ stays exactly as you saw it.
 | **Full screen**     | The whole display under the cursor                                               |
 | **Window**          | Hover and the border snaps to the window; click to take it                       |
 | **Pinned area**     | Pin a frame on screen and take the same spot on every press, app still usable    |
+| **Screen recording** | Same frame, or a single window; system sound and mic optional — the editor opens  |
 | **Color picker**    | Magnify down to the pixel and copy its `#RRGGBB`                                  |
 | **Text extraction** | Read the text inside a dragged area straight into the clipboard                  |
 
@@ -47,6 +48,16 @@ colleague sent you, an error dialog that won't let you copy, a scanned PDF, a pa
 of a video.
 
 <img src="images/ocr.png" alt="Dragging over a block of text in the pixnip settings window to extract it" width="700">
+
+## Record it, then make it look good
+
+Stop a recording and the dark video editor opens. Wherever you clicked, the picture zooms
+in for a moment and follows your cursor; the cursor itself is redrawn smoothly with a
+ripple on every click. Put the same wallpaper, gradient or solid background behind it as
+a screenshot. The video is a clip on the timeline: split it at the playhead, delete
+pieces, trim edges, and give each clip its own speed. Screen, system sound and mic sit
+on separate layers with waveforms and per-track volume. Export as MP4 (H.264 or HEVC),
+WebM or GIF at the original size, 1080p or 720p, 30 or 60 fps.
 
 That drag put exactly this on the clipboard:
 
@@ -119,6 +130,7 @@ to edit it on the spot.
 | Full screen      | ⌘⇧⌥F    |
 | Window capture   | ⌘⇧⌥W    |
 | Pinned area      | ⌘⇧⌥R    |
+| Screen recording | ⌘⇧⌥V    |
 | Color picker     | ⌘⇧⌥C    |
 | Text extraction  | ⌘⇧⌥T    |
 | Quickslot wheel  | ⌘⇧⌥S    |
