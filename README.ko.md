@@ -35,6 +35,7 @@ brew tap 132262b/pixnip && brew trust --cask 132262b/pixnip/pixnip && brew insta
 | **영역 캡처**   | 드래그한 만큼. `Space` 로 선택 영역 이동, 방향키로 1px 미세 조정    |
 | **전체화면**    | 커서가 있는 디스플레이를 통째로                                     |
 | **윈도우 캡처** | 창 위에 올리면 경계가 자동으로 잡히고, 클릭하면 찍힙니다            |
+| **고정 영역**   | 틀을 고정해 두고 버튼을 누를 때마다 같은 자리를. 틀 아래 앱은 그대로 쓰면서 |
 | **색상 추출**   | 확대경으로 픽셀을 집어 `#RRGGBB` 코드를 클립보드로                  |
 | **텍스트 추출** | 드래그한 영역의 글자를 읽어 그대로 클립보드에                       |
 
@@ -71,11 +72,11 @@ brew tap 132262b/pixnip && brew trust --cask 132262b/pixnip/pixnip && brew insta
 
 <img src="images/picker.png" alt="픽셀 격자와 0B84FF 색상 코드를 보여 주는 색상 추출 확대경" width="350">
 
-## 단축키 하나로 다섯 가지 전부
+## 단축키 하나로 여섯 가지 전부
 
 `⌘⇧⌥S` 를 톡 누르면 커서 자리에 휠이 열립니다. 조준하고 떼면 그대로 실행됩니다.
 
-<img src="images/quickslot-ko.png" alt="다섯 가지 캡처 모드가 놓인 퀵슬롯 휠" width="380">
+<img src="images/quickslot-ko.png" alt="캡처 모드가 놓인 퀵슬롯 휠" width="380">
 
 ## 캡처에서 편집까지 끊김이 없습니다
 
@@ -115,6 +116,7 @@ brew tap 132262b/pixnip && brew trust --cask 132262b/pixnip/pixnip && brew insta
 | 영역 캡처   | ⌘⇧⌥A        |
 | 전체화면    | ⌘⇧⌥F        |
 | 윈도우 캡처 | ⌘⇧⌥W        |
+| 고정 영역   | ⌘⇧⌥R        |
 | 색상 추출   | ⌘⇧⌥C        |
 | 텍스트 추출 | ⌘⇧⌥T        |
 | 퀵슬롯 휠   | ⌘⇧⌥S        |

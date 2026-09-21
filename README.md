@@ -36,6 +36,7 @@ stays exactly as you saw it.
 | **Area**            | Drag exactly what you want. `Space` moves the selection, arrow keys nudge it 1 px |
 | **Full screen**     | The whole display under the cursor                                               |
 | **Window**          | Hover and the border snaps to the window; click to take it                       |
+| **Pinned area**     | Pin a frame on screen and take the same spot on every press, app still usable    |
 | **Color picker**    | Magnify down to the pixel and copy its `#RRGGBB`                                  |
 | **Text extraction** | Read the text inside a dragged area straight into the clipboard                  |
 
@@ -77,7 +78,7 @@ the cursor across every display.
 
 Tap `⌘⇧⌥S` and the wheel opens where your cursor is. Aim, let go, it runs.
 
-<img src="images/quickslot.png" alt="The quickslot wheel with five capture modes" width="380">
+<img src="images/quickslot.png" alt="The quickslot wheel with the capture modes" width="380">
 
 ## From capture to markup, without a break
 
@@ -117,6 +118,7 @@ to edit it on the spot.
 | Area capture     | ⌘⇧⌥A    |
 | Full screen      | ⌘⇧⌥F    |
 | Window capture   | ⌘⇧⌥W    |
+| Pinned area      | ⌘⇧⌥R    |
 | Color picker     | ⌘⇧⌥C    |
 | Text extraction  | ⌘⇧⌥T    |
 | Quickslot wheel  | ⌘⇧⌥S    |

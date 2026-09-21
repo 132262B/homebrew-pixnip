@@ -7,8 +7,8 @@
 # 132262B/homebrew-pixnip 는 릴리스 zip 이 올라가는 공개 탭 저장소다. 소스 저장소는 비공개라
 # 여기서 참조하지 않는다.
 cask "pixnip" do
-  version "0.1.13"
-  sha256 "67a44390243adbd9d33d38a1a047d306507042ef9816ace265cec1a3046edaa4"
+  version "0.1.14"
+  sha256 "d879f82ed183bb05e0ef414be403185866ec270b047ba507f3a74078221939ab"
 
   url "https://github.com/132262B/homebrew-pixnip/releases/download/v#{version}/pixnip-#{version}-macos.zip",
       verified: "github.com/132262B/homebrew-pixnip/"
@@ -42,11 +42,15 @@ cask "pixnip" do
   #
   # 스탠자 순서(app → postflight → uninstall → zap → caveats)는 brew style 이
   # 강제한다. 순서를 바꾸면 style 검사에서 걸린다.
-  uninstall quit: "kr.doweb.pixnip"
+  uninstall quit: "com.flate.pixnip"
 
+  # kr.doweb.pixnip 은 0.1.13 까지 쓰던 번들 ID. 거기서 올라온 사용자의 잔재도 지운다.
   zap trash: [
+    "~/Library/Application Support/com.flate.pixnip",
     "~/Library/Application Support/kr.doweb.pixnip",
+    "~/Library/Saved Application State/com.flate.pixnip.savedState",
     "~/Library/Saved Application State/kr.doweb.pixnip.savedState",
+    "~/Library/WebKit/com.flate.pixnip",
     "~/Library/WebKit/kr.doweb.pixnip",
   ]
 
