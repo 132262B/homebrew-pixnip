@@ -1,11 +1,14 @@
 <div align="center">
 
+<img src="images/icon.png" width="128" alt="pixnip icon — a cat peeking over a camera">
+
 # pixnip
 
-**A screenshot tool for macOS.**
+**A screenshot and screen recording tool for macOS.**
 
 Press a shortcut, the screen freezes, drag — the image, or the text inside it,
-is already on your clipboard.
+is already on your clipboard. Press another and you are recording, with an editor
+waiting when you stop.
 
 macOS 14+ · Apple Silicon & Intel · light & dark · 10 languages
 
@@ -49,15 +52,32 @@ of a video.
 
 <img src="images/ocr.png" alt="Dragging over a block of text in the pixnip settings window to extract it" width="700">
 
-## Record it, then make it look good
+## Record the screen
+
+Press `⌘⇧⌥V` and the same frame you use for pinned captures appears. Drag it where you
+want, resize it, or use the buttons on its bar — the display button fills the whole screen,
+the window button lets you click one window to record just that. Press `⌘⇧⌥V` again (or
+the record button) to start: the border turns red and the bar shows the time. Press once
+more to stop. Whatever is under the frame keeps working while you record.
+
+Sound goes in with the picture when you want it. Settings → Recording has switches for
+system sound (whatever plays through the speakers) and the microphone (macOS 15 and
+later), each written as its own track so you can balance them afterwards. The cursor is
+not burned into the video — pixnip logs where it went and what it clicked, and the
+editor redraws it.
+
+<img src="images/video-editor.png" alt="The pixnip video editor: a recording on a wallpaper background, zoom segments and clips on the timeline, waveform lanes below" width="880">
+
+## Then make it look good
 
 Stop a recording and the dark video editor opens. Wherever you clicked, the picture zooms
 in for a moment and follows your cursor; the cursor itself is redrawn smoothly with a
 ripple on every click. Put the same wallpaper, gradient or solid background behind it as
-a screenshot. The video is a clip on the timeline: split it at the playhead, delete
-pieces, trim edges, and give each clip its own speed. Screen, system sound and mic sit
-on separate layers with waveforms and per-track volume. Export as MP4 (H.264 or HEVC),
-WebM or GIF at the original size, 1080p or 720p, 30 or 60 fps.
+a screenshot — dozens of presets, or your own image. The video is a clip on the timeline:
+split it at the playhead (`C`), delete pieces, trim edges, and give each clip its own
+speed from 0.5× to 3×. Screen, system sound and mic sit on separate layers with waveforms
+and per-track volume. Export as MP4 (H.264 or HEVC), WebM or GIF at the original size,
+1080p or 720p, 30 or 60 fps.
 
 That drag put exactly this on the clipboard:
 
