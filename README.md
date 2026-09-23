@@ -43,6 +43,7 @@ stays exactly as you saw it.
 | **Screen recording** | The red button on the same frame. One window if you like; sound and mic optional — the editor opens |
 | **Color picker**    | Magnify down to the pixel and copy its `#RRGGBB`                                  |
 | **Text extraction** | Read the text inside a dragged area straight into the clipboard                  |
+| **Draw on screen**  | Pen, arrows and shapes over the screen while you teach; click through to the app underneath |
 
 ## Text you can't select
 
@@ -157,10 +158,10 @@ to edit it on the spot.
 | Full screen      | ⌘⇧⌥F    |
 | Window capture   | ⌘⇧⌥W    |
 | Pinned area      | ⌘⇧⌥R    |
-| Screen recording | ⌘⇧⌥V    |
 | Color picker     | ⌘⇧⌥C    |
 | Text extraction  | ⌘⇧⌥T    |
-| Quickslot wheel  | ⌘⇧⌥S    |
+| Draw on screen   | ⌘⇧⌥D    |
+| Quickslot wheel  | ⌘⇧⌥Q    |
 
 ## Update and uninstall
 
